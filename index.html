@@ -23,6 +23,7 @@
 
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
+<link href="assets/css/registration.css" rel="stylesheet">
 
 
 
@@ -298,6 +299,9 @@
 	left: 5px;
 	top: -10px;
 }
+
+
+
 </style>
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -324,6 +328,9 @@
 <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
 <li><a class="page-scroll" href="#courses">Courses</a></li>
 <li><a class="page-scroll" href="#contact">Contact</a></li>
+<li><a class="page-scroll" href="#signin"><span id="register-logo"><i class="fa fa-user-plus"></i></span></a></li>
+
+
 </ul>
 </div>
 </div>
@@ -986,6 +993,57 @@ tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
 <!-- Contact End-->
 
 
+<!-- Registration -->
+<section id="signin" class="contact-section">
+
+<div class="section-intro text-center">
+<h2>Register</h2>
+<hr class="colored">
+</div>
+<div class="container-2" id="container-2">
+    <div class="form-container sign-up-container">
+      <form action="#" id="form-con" >
+        <h1  class="mod-title" >Create Account</h1>
+        <input class="reg-input" type="text" placeholder="Name" required/>
+        <input class="reg-input" type="email" placeholder="Email" required/>
+        <input class="reg-input" type="password" placeholder="Password" required />
+        <button class="reg-btn">Sign Up</button>
+    </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#" id="form-con">
+     <h1 class="mod-title">Sign in</h1>
+     <input class="reg-input" type="email" placeholder="Email" required />
+     <input class="reg-input" type="password" placeholder="Password" required />
+     <button class="reg-btn">Sign In</button>
+ </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+       <div class="overlay-panel overlay-left">
+           <h1  class="mod-title" >Welcome Back!</h1>
+           <p class="paragraph">
+               Please login to connect to us
+           </p>
+           <button class="reg-btn" id="signIn">Sign In</button>
+       </div>
+       <div class="overlay-panel overlay-right">
+           <h1  class="mod-title" >Hi Dearest</h1>
+           <p class="paragraph">Fill the form and start a journey with us</p>
+           <button class="reg-btn" id="signUp">Sign Up</button>
+       </div>
+   </div>
+    </div>
+</div>
+
+</section>
+<!-- Registration End-->
+
+
+
+
+
+
 <!-- Social Media -->
 <footer class="footer-section text-center">
 <div class="container">
@@ -1030,5 +1088,6 @@ tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
 <script src="assets/owl.carousel/owl.carousel.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="assets/js/scriptsf195.js?v=2.1"></script>
+<script src="assets/js/registration.js"></script>
 </body>
 </html>
