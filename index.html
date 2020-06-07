@@ -35,6 +35,8 @@
 <style type="text/css">
 
 
+/* Our Skills */
+
 @keyframes load{
   from {
     width: 0%
@@ -300,6 +302,19 @@
 	top: -10px;
 }
 
+.fa-user
+{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.fa-user:hover
+{
+	background: #F9C72A;
+	color: #fff;
+}
+
 
 
 </style>
@@ -324,13 +339,11 @@
 <li class="active"><a class="page-scroll" href="#home">Home</a></li>
 <li><a class="page-scroll" href="#about">About</a></li>
 <li><a class="page-scroll" href="#services">Services</a></li>
+<li><a class="page-scroll" href="#courses">Our Courses</a></li>
 <li><a class="page-scroll" href="#blog">Blog</a></li>
 <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-<li><a class="page-scroll" href="#courses">Courses</a></li>
 <li><a class="page-scroll" href="#contact">Contact</a></li>
-<li><a class="page-scroll" href="#signin"><span id="register-logo"><i class="fa fa-user-plus"></i></span></a></li>
-
-
+<li><a href="#add" data-target="#addNewMember" data-toggle="modal"><i class="fa fa-user fa-lg"></i></a></li>
 </ul>
 </div>
 </div>
@@ -487,6 +500,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 </article>
 </div>
+
 <!-- course 2 -->
 <div class="col-md-4">
 <article class="blog-post-wrapper">
@@ -511,6 +525,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 </article>
 </div>
+
 <!-- course 3 -->
 <div class="col-md-4">
 <article class="blog-post-wrapper">
@@ -538,7 +553,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
 
 <div class="text-center loadmore">
-<a href="#" class="btn btn-primary btn-lg">View All Courses</a>
+<a href="all_courses.html" class="btn btn-primary btn-lg">View All Courses</a>
 </div>
 </div>
 </section>
@@ -615,7 +630,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p>
 <span class="description">Courses</span>
 </div>
 <div class="col-xs-6 col-sm-3 counter-wrapper">
-<span class="icon"><i class="glyphicon glyphicon-user"></i></span>
+<span class="icon"><i class="fa fa-user"></i></span>
 <span class="timer">5</span>
 <span class="description">Tutors</span>
 </div>
@@ -643,7 +658,7 @@ tempor incididunt ut labore et dolore magna aliqua.</p>
 <div class="portfolio-tab" role="tabpanel">
 
 <ul id="portfolioTab" class="nav nav-tabs nav-justified" role="tablist">
-<li role="presentation" class="active"><a href="#tabTwo" aria-controls="tabTwo" role="tab" data-toggle="tab">Inventory Systems</a></li>
+<li role="presentation" class="active"><a href="#tabTwo" aria-controls="tabTwo" role="tab" data-toggle="tab">POS</a></li>
 <li role="presentation"><a href="#tabOne" aria-controls="tabOne" role="tab" data-toggle="tab">E-Commerce</a></li>
 <li role="presentation"><a href="#tabThree" aria-controls="tabThree" role="tab" data-toggle="tab">Blog Websites</a></li>
 <li role="presentation"><a href="#tabFour" aria-controls="tabFour" role="tab" data-toggle="tab">Location App</a></li>
@@ -938,7 +953,6 @@ tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
 <p>Sign up to be the first to hear about out events and rallies</p>
 </div>
 <form class="subscribe-form mailchimp form-inline" role="form" method="post">
-
 <label for="subscribeEmail" class="error"></label>
 <div class="form-group">
 <label class="sr-only" for="subscribeEmail">Subscribe</label>
@@ -993,52 +1007,19 @@ tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
 <!-- Contact End-->
 
 
-<!-- Registration -->
-<section id="signin" class="contact-section">
 
+
+
+<!-- Registration 
+<section id="signin" class="contact-section">
 <div class="section-intro text-center">
-<h2>Register</h2>
+<h2>Be Part Of Our Wonderful Family</h2>
 <hr class="colored">
 </div>
-<div class="container-2" id="container-2">
-    <div class="form-container sign-up-container">
-      <form action="#" id="form-con" >
-        <h1  class="mod-title" >Create Account</h1>
-        <input class="reg-input" type="text" placeholder="Name" required/>
-        <input class="reg-input" type="email" placeholder="Email" required/>
-        <input class="reg-input" type="password" placeholder="Password" required />
-        <button type="submit" class="reg-btn">Sign Up</button>
-    </form>
-    </div>
-    <div class="form-container sign-in-container">
-      <form action="#" id="form-con">
-     <h1 class="mod-title">Sign in</h1>
-     <input class="reg-input" type="email" placeholder="Email" required />
-     <input class="reg-input" type="password" placeholder="Password" required />
-     <a class="forget-password" href="#">Forgot your password?</a>
-     <button type="submit" class="reg-btn">Sign In</button>
- </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-       <div class="overlay-panel overlay-left">
-           <h1  class="mod-title" >Welcome Back!</h1>
-           <p class="paragraph">
-               Please login to connect to us
-           </p>
-           <button class="reg-btn" id="signIn">Sign In</button>
-       </div>
-       <div class="overlay-panel overlay-right">
-           <h1  class="mod-title" >Hi Dearest</h1>
-           <p class="paragraph">Fill the form and start a journey with us</p>
-           <button type="submit" class="reg-btn" id="signUp">Sign Up</button>
-       </div>
-   </div>
-    </div>
-</div>
+
 
 </section>
-<!-- Registration End-->
+Registration End-->
 
 
 
@@ -1070,6 +1051,62 @@ tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
 <div class="status-mes"></div>
 </div>
 </div>
+
+
+
+
+<!-- Modal -->
+<div class="container">
+ <div class="modal fade" tabindex="-1" role="dialog" id="addNewMember">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title"> Be part of our wonderful family </h4>
+      </div>
+      <div class="container-2" id="container-2">
+    <div class="form-container sign-up-container">
+      <form action="#" id="form-con" class="center-responsive">
+        <h1  class="mod-title" >Create Account</h1>
+        <input class="reg-input" type="text" placeholder="Name" required/>
+        <input class="reg-input" type="email" placeholder="Email" required/>
+        <input class="reg-input" type="password" placeholder="Password" required />
+        <button class="reg-btn">Sign Up</button>
+    </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#" id="form-con">
+     <h1 class="mod-title">Sign in</h1>
+     <input class="reg-input" type="email" placeholder="Email" required />
+     <input class="reg-input" type="password" placeholder="Password" required />
+     <button class="reg-btn">Sign In</button>
+ </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+       <div class="overlay-panel overlay-left">
+           <h1  class="mod-title" >Welcome Back!</h1>
+           <p class="paragraph">
+               Please login to connect to us
+           </p>
+           <button class="reg-btn" id="signIn">Sign In</button>
+       </div>
+       <div class="overlay-panel overlay-right">
+           <h1  class="mod-title" >Hi Dearest</h1>
+           <p class="paragraph">Fill the form and start a journey with us</p>
+           <button class="reg-btn" id="signUp">Sign Up</button>
+       </div>
+   </div>
+    </div>
+</div>
+    </div>
+    </div>
+   </div>
+</div>
+   <!-- Modal end -->
+
 
 
 
